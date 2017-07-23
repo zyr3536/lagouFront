@@ -19,7 +19,12 @@ angular.module('app').config(['$stateProvider', '$urlRouterProvider', function (
         url: '/main',
         templateUrl: 'view/main.html',
         controller: 'mainCtrl'
-    });
+    })
+/*        .state('echart', {
+            url: '/echart',
+            templateUrl:'view/echart.html'
+        })*/
+    ;
     $urlRouterProvider.otherwise('main');
 
 }]);
@@ -27,4 +32,12 @@ angular.module('app').config(['$stateProvider', '$urlRouterProvider', function (
 'use strict';
 angular.module('app').controller('mainCtrl',['$scope', function ($scope) {
 
+}]);
+'use strict';
+angular.module('app').directive('appHead',[function () {
+    return {
+        restrict: 'A',
+        replace: true,
+        templateUrl: 'view/template/head.html'
+    }
 }]);

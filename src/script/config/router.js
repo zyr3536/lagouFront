@@ -16,7 +16,12 @@ angular.module('app').config(['$stateProvider', '$urlRouterProvider', function (
         url: '/main',
         templateUrl: 'view/main.html',
         controller: 'mainCtrl'
-    });
+    })
+/*        .state('echart', {
+            url: '/echart',
+            templateUrl:'view/echart.html'
+        })*/
+    ;
     $urlRouterProvider.otherwise('main');
 
 }]);
