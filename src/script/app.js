@@ -1,3 +1,3 @@
-/**
- * Created by zyr on 2017/7/23.
- */
+'use strict';
+
+angular.module('app', ['ui.router']);
