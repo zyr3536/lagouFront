@@ -6,10 +6,13 @@
     <title>lagou</title>
 </head>
 <body>
-imooc
-
-<script src="vendor/angular/angular.js"></script>
-<script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
-<script src="js/index.js"></script>
+    <div ui-view></div>
+   <!--自适应-->
+    <script>
+        document.getElementsByTagName('html')[0].style.fontSize = window.screen.width / 10 + 'px';
+    </script>
+    <script src="vendor/angular/angular.js"></script>
+    <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
